@@ -10,8 +10,13 @@ class ProjectSeeder extends Seeder
     /**
      * Run the database seeds.
      */
-    public function run(): void
-    {
-        //
-    }
+    public function run()
+{
+    \App\Models\Project::create([
+        'title' => 'Progetto 1',
+        'description' => 'Descrizione del progetto 1',
+        'image' => ''
+    ]);
+}
+
 }
