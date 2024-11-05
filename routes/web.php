@@ -13,3 +13,6 @@ Route::middleware('auth')->prefix('admin')->name('admin.')->group(function () {
 
 
 Route::get('/projects/{project}', [ProjectController::class, 'show'])->name('projects.show');
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
